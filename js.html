@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="demo">Good Evening</p>
     <script>
         console.log("Hello, World! We start now.")
         let name = "Musa";
@@ -126,6 +127,11 @@
 
         let result = 3>4;
         alert(result);
+
+        if (new Date().getHours()<18){
+            document.getElementById("demo").innerHTML = "Good day!";
+        }
+        
     </script>
 </body>
 </html>
