@@ -132,15 +132,25 @@
         // if (new Date().getHours()<18){
         //     document.getElementById("demo").innerHTML = "Good day!";
         // }
+        // const hour = new Date().getHours();
+        // let Greeting;
+
+        // if (hour < 12){
+        //     Greeting = "Good day";
+        // } else {
+        //     Greeting = "good evening"
+        // }
+        // document.getElementById("demo").innerHTML = Greeting;
         const hour = new Date().getHours();
         let Greeting;
-
-        if (hour < 12){
-            Greeting = "Good day";
+        if (hour<15){
+            Greetings = "Good morning";
+        } else if (hour<17){
+            Greetings = "Good day";
         } else {
-            Greeting = "good evening"
+            Greetings = "Good evening";
         }
-        document.getElementById("demo").innerHTML = Greeting;
+        document.getElementById("demo").innerHTML = Greetings;
 
         
     </script>
