@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo">Good Evening</p>
+    <p id="demo"></p>
     <script>
         console.log("Hello, World! We start now.")
         let name = "Musa";
@@ -128,9 +128,20 @@
         let result = 3>4;
         alert(result);
 
-        if (new Date().getHours()<18){
-            document.getElementById("demo").innerHTML = "Good day!";
+        // Conditions
+        // if (new Date().getHours()<18){
+        //     document.getElementById("demo").innerHTML = "Good day!";
+        // }
+        const hour = new Date().getHours();
+        let Greeting;
+
+        if (hour < 12){
+            Greeting = "Good day";
+        } else {
+            Greeting = "good evening"
         }
+        document.getElementById("demo").innerHTML = Greeting;
+
         
     </script>
 </body>
