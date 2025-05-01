@@ -134,8 +134,9 @@
         alert(false || true)
         alert(false || false)
 
-        let Hour = 9;
-        if (Hour <10 || Hour>18){
+        let Hour = 12;
+        let isweekend = true;
+        if (Hour <10 || Hour>18 || isweekend){
             alert('The office is closed!');
         }
 
