@@ -120,6 +120,23 @@
         // Maths (Comparisons)
         "use strict";
 
+        let userName = prompt("Who's there?", '');
+        if (userName === 'Admin'){
+            let pass = prompt("Password?", '');
+            if (pass === 'TheMaster'){
+                alert("Welcome, Master!");
+
+            } else if (pass === '' || pass === null){
+            alert("Canceled");
+            } else {
+            alert('Wrong Password!');
+            }
+            
+        } else if (userName === '' || userName === null){
+            alert('canceled!');
+        } else {
+            alert("I don't know you!")
+        }
         // alert(2>1);
         // alert(2<1);
         // alert(2==2);
@@ -130,8 +147,8 @@
 
         // Operators
         // (Not)!
-        alert(!true);
-        alert(!0);
+        // alert(!true);
+        // alert(!0);
 
         // (And)&&
         // alert (true && true);
@@ -171,16 +188,16 @@
         //     Greeting = "good evening"
         // }
         // document.getElementById("demo").innerHTML = Greeting;
-        const hour = new Date().getHours();
-        let Greeting;
-        if (hour<15){
-            Greetings = "Good morning";
-        } else if (hour<17){
-            Greetings = "Good day";
-        } else {
-            Greetings = "Good evening";
-        }
-        document.getElementById("demo").innerHTML = Greetings;
+        // const hour = new Date().getHours();
+        // let Greeting;
+        // if (hour<15){
+        //     Greetings = "Good morning";
+        // } else if (hour<17){
+        //     Greetings = "Good day";
+        // } else {
+        //     Greetings = "Good evening";
+        // }
+        // document.getElementById("demo").innerHTML = Greetings;
 
         
     </script>
