@@ -120,23 +120,43 @@
         // Maths (Comparisons)
         "use strict";
 
-        let userName = prompt("Who's there?", '');
-        if (userName === 'Admin'){
-            let pass = prompt("Password?", '');
-            if (pass === 'TheMaster'){
-                alert("Welcome, Master!");
+        // Switch statements
+        let A = 2+2;
+        
+        switch (A) {
+            case 3: 
+                alert('less value');
+                break;
 
-            } else if (pass === '' || pass === null){
-            alert("Canceled");
-            } else {
-            alert('Wrong Password!');
-            }
+            case 4: 
+                alert('exact value');
+                break;
+
+            case 5: 
+                alert('excess value');
+                break;
             
-        } else if (userName === '' || userName === null){
-            alert('canceled!');
-        } else {
-            alert("I don't know you!")
+            default:
+                alert("Unrecognized value")
         }
+        
+        // let userName = prompt("Who's there?", '');
+        // if (userName === 'Admin'){
+        //     let pass = prompt("Password?", '');
+        //     if (pass === 'TheMaster'){
+        //         alert("Welcome, Master!");
+
+        //     } else if (pass === '' || pass === null){
+        //     alert("Canceled");
+        //     } else {
+        //     alert('Wrong Password!');
+        //     }
+
+        // } else if (userName === '' || userName === null){
+        //     alert('canceled!');
+        // } else {
+        //     alert("I don't know you!")
+        // }
         // alert(2>1);
         // alert(2<1);
         // alert(2==2);
